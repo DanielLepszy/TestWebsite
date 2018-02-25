@@ -302,3 +302,11 @@ br {
   transform: rotate(192deg);
   z-index: 1;
 }
+#secondFigure p
+{
+  transform: rotate(-192deg);
+}
+/* #tasksInformation
+{
+  
+} */
