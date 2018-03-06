@@ -1,6 +1,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  margin: -10px;
 }
 
 #firstPage {
@@ -317,31 +318,6 @@ br {
   left: 150px;
 }
 
-#buttonNext {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  border: solid #EFC900;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  height: 25px;
-  width: 25px;
-  transition: all .3s ease-in-out;
-}
-
-#buttonNext::after {
-  content: '';
-  position: absolute;
-  border: solid #EFC900;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  margin-left: 7px;
-  margin-top: 7px;
-}
-
 #SecondButtonNext,
 #SecondButtonNext::after {
   border-color: black
@@ -359,38 +335,34 @@ br {
   position: relative;
   /* overflow: hidden; */
   z-index: 2;
-  width: 100%;
 }
 
 #thirdDescription {
   color: #EFC900;
 }
 
-#FourStepsHowItIsWork {
+#FourStepsHowIsItWork {
   position: absolute;
   left: 50%;
+  top: 35%;
   transform: translate(-50%, -50%);
   width: 80%;
   height: auto;
-  border: 3px solid white;
   margin-top: 15%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
-  
 }
 
-.positionHowItIsWork {
+.positionHowIsItWork {
   position: relative;
   padding-bottom: 10px;
   width: 100%;
   left: 0px;
-  border: 3px solid red;
-  height:auto;
+  height: 100%;
 }
 
-.positionHowItIsWork br 
-{
+.positionHowIsItWork br {
   display: block;
   margin: 5px 0;
 }
@@ -399,19 +371,110 @@ br {
   position: relative;
   left: 35%;
   color: #EFC900;
-  font-size: 65px;
+  font-size: 180px;
   font-weight: bolder;
-  margin-top:5px;
+  margin-top: 55px;
+  height: auto;
 }
 
 .informationAboutStep {
   position: absolute;
   color: #EFC900;
   font-family: Ubuntu;
-  font-size: 25px;
+  font-size: 55px;
   font-weight: bolder;
-  top: 0%;
+  margin: 0;
+  margin-bottom: 150px;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+}
+
+#ThirdButtonNext {
+  top: 96%;
+}
+
+#ThirdButtonNext,
+#ThirdButtonNext::after {
+  border-color: rgb(255, 250, 250);
+}
+
+#fourthPage {
+  margin: -10px;
+  background-image: url('Images/dron.png');
+  background-color: #EFC900;
+  min-height: 800px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#nextButtonsForTwoSides {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 50%;
+}
+
+#leftSideButtonNext {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  transform: rotate(135deg);
+}
+
+#rightSideButtonNext {
+  position: absolute;
+  top: 45%;
+  left: 96%;
+  transform: rotate(-45deg);
+}
+
+#contactPage {
+  margin: -10px;
+  background-color: #EFC900;
+  min-height: 200px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+#containerVCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#contactInformation {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0%;
+  left: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactInformation h1,span{
+  padding-top: 15px;
+  margin:0px 5px 0px;
 }
