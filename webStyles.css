@@ -1,19 +1,21 @@
 body {
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
-  margin: -10px;
+  margin: 0px 0px 0px;
+  display: block;
 }
 
 #firstPage {
-  margin: -10px;
+  margin: 0px -10px 0px;
+  position: relative;
   background-image: url('Images/dron.png');
-  min-height: 1000px;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* width:100%; */
 }
 
 #logo {
@@ -104,9 +106,9 @@ br {
 }
 
 #secondPage {
-  margin: -10px;
+  margin: 0px -10px 10px;
   background-color: #EFC900;
-  min-height: 800px;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -127,18 +129,6 @@ br {
 .SecondAbout {
   margin-right: 40px;
   font-size: 17px;
-}
-
-#firstPage {
-  margin: -10px;
-  background-image: url('Images/dron.png');
-  min-height: 800px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* width:100%; */
 }
 
 #logo {
@@ -227,18 +217,6 @@ br {
   transition: all .3s ease-in-out;
 }
 
-#secondPage {
-  margin: -10px;
-  background-color: #EFC900;
-  min-height: 800px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 .nextDescriptionCompany {
   display: flex;
   flex-direction: row;
@@ -291,7 +269,7 @@ br {
 }
 
 #secondFigure {
-  position: absolute;
+  /* position: absolute;
   font-size: 25px;
   left: -210px;
   bottom: -225px;
@@ -299,23 +277,28 @@ br {
   border-top: 850px solid rgb(255, 255, 255);
   border-left: 750px solid transparent;
   border-right: 425px solid transparent;
-  transform: rotate(192deg);
+  transform: rotate(192deg); */
+  position: absolute;
+  font-size: 25px;
+  left: -32vw;
+  bottom: -180px;
+  width: 30vw;
+  border-bottom:85vh solid rgb(255, 255, 255);
+  border-left: 35vw solid transparent;
+  border-right: 75vw solid transparent;
+  transform: rotate(20deg);
   z-index: 1;
-}
-
-#secondFigure p {
-  transform: rotate(-192deg);
 }
 
 #tasksInformation p {
   text-align: center;
   overflow: auto;
   position: absolute;
-  width: auto;
-  height: auto;
-  border: 11px solid black;
-  bottom: 220px;
-  left: 150px;
+  width: 35vw;
+  height: 45vh;
+  top: 10vh;
+  left:-3vw;
+  transform: rotate(-20deg);
 }
 
 #SecondButtonNext,
@@ -326,7 +309,7 @@ br {
 #thirdPage {
   margin: -10px;
   background-color: #252525;
-  min-height: 2400px;
+  height: 300vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -344,10 +327,10 @@ br {
 #FourStepsHowIsItWork {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 10%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: auto;
+  height: 100vh;
   margin-top: 15%;
   margin-bottom: 5%;
   display: flex;
@@ -373,7 +356,7 @@ br {
   color: #EFC900;
   font-size: 180px;
   font-weight: bolder;
-  margin-top: 55px;
+  margin-top: 35px;
   height: auto;
 }
 
@@ -381,7 +364,7 @@ br {
   position: absolute;
   color: #EFC900;
   font-family: Ubuntu;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: bolder;
   margin: 0;
   margin-bottom: 150px;
@@ -402,10 +385,10 @@ br {
 }
 
 #fourthPage {
-  margin: -10px;
+  margin: 0px -10px 10px;
   background-image: url('Images/dron.png');
   background-color: #EFC900;
-  min-height: 800px;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -422,7 +405,8 @@ br {
   top: 50%;
 }
 
-#leftSideButtonNext {
+#leftSideButtonNext,
+#rightSideButtonNext {
   position: absolute;
   top: 45%;
   left: 3%;
@@ -430,8 +414,6 @@ br {
 }
 
 #rightSideButtonNext {
-  position: absolute;
-  top: 45%;
   left: 96%;
   transform: rotate(-45deg);
 }
@@ -474,7 +456,8 @@ br {
   flex-direction: column;
 }
 
-#contactInformation h1,span{
+#contactInformation h1,
+span {
   padding-top: 15px;
-  margin:0px 5px 0px;
+  margin: 0px 5px 0px;
 }
