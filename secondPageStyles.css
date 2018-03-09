@@ -1,0 +1,210 @@
+#secondPage {
+  margin: 0px 0px -10px;
+  background-color: #EFC900;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.nextDescriptionCompany {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  top: 45px;
+  right: 2%;
+  color: white;
+}
+
+.SecondAbout {
+  margin-right: 40px;
+  font-size: 17px;
+  font-family: Ubuntu;
+  font-weight: bolder;
+}
+
+.SecondAbout:hover {
+  color: black;
+}
+
+#descriptionCompany {
+  position: absolute;
+  left: 50px;
+  top: -220px;
+  font-size: 17px;
+  width: 240px;
+  transform: rotate(-55deg);
+}
+
+#buttonNext {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  border: solid #EFC900;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 25px;
+  width: 25px;
+  transition: all .3s ease-in-out;
+}
+
+#buttonNext::after {
+  content: '';
+  position: absolute;
+  border: solid #EFC900;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+#buttonNext:hover {
+  transform: scale(1.5, 1.5) rotate(45deg);
+  transition: all .3s ease-in-out;
+}
+
+#buissnessDescription {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  font-size: 30px;
+  font-family: Ubuntu;
+  font-weight: bolder;
+  color: white;
+}
+
+.mainTask {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.mainTask:hover {
+  color: black;
+}
+
+.mainTask::before {
+  content: '';
+  width: 120%;
+  height: 10px;
+  transform: skewX( 45deg);
+  background-color: #252525;
+  margin: 50px auto 0;
+  position: absolute;
+  margin-top: 43px;
+  margin-left: -2px;
+}
+
+#secondFigure {
+  position: absolute;
+  font-size: 25px;
+  left: -32vw;
+  bottom: -180px;
+  width: 30vw;
+  border-bottom: 85vh solid rgb(255, 255, 255);
+  border-left: 35vw solid transparent;
+  border-right: 75vw solid transparent;
+  transform: rotate(20deg);
+  z-index: 1;
+}
+
+#tasksInformation p {
+  text-align: center;
+  overflow: auto;
+  position: absolute;
+  width: 35vw;
+  height: 45vh;
+  top: 10vh;
+  left: -3vw;
+  transform: rotate(-20deg);
+}
+
+#SecondButtonNext,
+#SecondButtonNext::after {
+  border-color: black
+}
+@media screen and (min-width:721px) and (max-width: 1060px) {
+  .mainTask {
+    font-size: 20px;
+  }
+  .mainTask::before {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width:0px) and (max-width: 720px) {
+  .secondLogo {
+    display: none;
+  }
+  #descriptionCompany {
+    position: absolute;
+    left: 50px;
+    top: -220px;
+    font-size: 17px;
+    width: 240px;
+    transform: rotate(-55deg);
+  }
+  .nextDescriptionCompany {
+    top: 20px;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+  .SecondAbout {
+    margin-right: 20px;
+    font-size: 10px;
+  }
+  .SecondAbout:hover {
+    color: black;
+  }
+  #buissnessDescription {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 30px;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    color: white;
+  }
+  .mainTask {
+    font-size: 10px;
+  }
+  .mainTask::before {
+    margin-top: 23px;
+  }
+  #secondFigure {
+    position: absolute;
+    font-size: 15px;
+    left: 0px;
+    bottom: 70px;
+    width: 100vw;
+    border-bottom: 200px solid rgb(255, 255, 255);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  #tasksInformation p {
+    text-align: center;
+    width: 35vw;
+    height: 45vh;
+    top: 20px;
+    left: 35%;
+    transform: rotate(0deg);
+  }
+  #SecondButtonNext,
+  #SecondButtonNext::after {
+    border-color: black
+  }
+}
+
+@media screen and (min-width:0px) and (max-width: 360px) {
+  #secondFigure {
+    border-bottom: 180px solid rgb(255, 255, 255);
+  }
+  
+}
