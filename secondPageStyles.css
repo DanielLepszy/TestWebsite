@@ -12,7 +12,6 @@
 
 .nextDescriptionCompany {
   position: absolute;
-
   display: flex;
   flex-direction: row;
   top: 45px;
@@ -129,6 +128,7 @@
 #SecondButtonNext::after {
   border-color: black
 }
+
 @media screen and (min-width:721px) and (max-width: 1060px) {
   .mainTask {
     font-size: 20px;
@@ -137,6 +137,7 @@
     margin-top: 20px;
   }
 }
+
 @media screen and (min-width:0px) and (max-width: 720px) {
   .secondLogo {
     display: none;
@@ -206,5 +207,4 @@
   #secondFigure {
     border-bottom: 180px solid rgb(255, 255, 255);
   }
-  
 }

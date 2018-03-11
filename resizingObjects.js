@@ -1,42 +1,18 @@
-var pageWidth, pageHeight;
+function scrollPageDown(x) {
+    var currentY = window.pageYOffset;
+    var secondPage = document.getElementById(x).offsetTop
+    var lengthOfMove = currentY + (secondPage - currentY);
+    var position = currentY;
 
-var basePage = {
-  width: 800,
-  height: 600,
-  scale: 1,
-  scaleX: 1,
-  scaleY: 1
-};
+    var id = setInterval(speedY, 0.1);
 
-$(function(){
-  var $page = $('.page_content');
-  
-  getPageSize();
-  scalePages($page, pageWidth, pageHeight);
-  
-  //using underscore to delay resize method till finished resizing window
-  $(window).resize(_.debounce(function () {
-    getPageSize();            
-    scalePages($page, pageWidth, pageHeight);
-  }, 150));
-  
+    function speedY() {
+        if (position >= lengthOfMove) {
+            clearInterval(id);
+        } else {
+            window.scroll(0, position);
+            position += 4;
+        }
+    }
 
-function getPageSize() {
-  pageHeight = $('#container').height();
-  pageWidth = $('#container').width();
 }
-
-function scalePages(page, maxWidth, maxHeight) {            
-  var scaleX = 1, scaleY = 1;                      
-  scaleX = maxWidth / basePage.width;
-  scaleY = maxHeight / basePage.height;
-  basePage.scaleX = scaleX;
-  basePage.scaleY = scaleY;
-  basePage.scale = (scaleX > scaleY) ? scaleY : scaleX;
-
-  var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth)/2));
-  var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight)/2));
-
-  page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:' + newTopPos + 'px;');
-}
-});

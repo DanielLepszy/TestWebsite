@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
     margin: 0px 0px 0px;
     display: block;
-    
 }
 
 #firstPage {
@@ -16,7 +15,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 #logo {
@@ -36,7 +34,6 @@ body {
     border-right: 166px solid transparent;
     transform: rotate(55deg);
     z-index: 1;
-    
 }
 
 #descriptionCompany {
@@ -133,10 +130,6 @@ br {
 }
 
 @media screen and (min-width:0px) and (max-width: 360px) {
-    #firstPage
-    {
-        transform:scale(3,3);
-    }
     #logo {
         left: 20%;
         top: 50%;

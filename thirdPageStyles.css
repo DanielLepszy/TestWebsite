@@ -13,10 +13,11 @@
 #thirdDescription .secondAbout {
     color: #EFC900;
 }
-.secondAbout:hover
-{
-    cursor:hand;
+
+.secondAbout:hover {
+    cursor: hand;
 }
+
 #thirdLogo {
     position: relative;
     top: 45px;
@@ -127,6 +128,5 @@
     .informationAboutStep {
         font-size: 15px;
         left: 45%;
-        
     }
 }

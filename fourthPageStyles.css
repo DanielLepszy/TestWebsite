@@ -11,23 +11,16 @@
   overflow: hidden;
   width: 100%;
 }
-#aa
-{
-  font-size:50px;
-  position: absolute;
-  right:50px;
-}
 #leftSideButtonNext,
 #rightSideButtonNext {
   position: absolute;
-  top:50%;
+  top: 50%;
   border: solid #EFC900;
   border-width: 0 4px 4px 0;
   display: inline-block;
   height: 25px;
   width: 25px;
-
-}  
+}
 
 #nextButtonsForTwoSides div::after {
   content: '';
@@ -41,13 +34,14 @@
   margin-top: 7px;
 }
 
-#leftSideButtonNext{
-transform: rotate(135deg);
-left:5%;
+#leftSideButtonNext {
+  transform: rotate(135deg);
+  left: 5%;
 }
+
 #rightSideButtonNext {
   transform: rotate(-45deg);
-  right:5%;
+  right: 5%;
 }
 
 #rightSideButtonNext:hover {
@@ -59,6 +53,7 @@ left:5%;
   transform: scale(1.5, 1.5) rotate(135deg);
   transition: all .3s ease-in-out;
 }
+
 #contactPage {
   margin: 0px;
   background-color: #EFC900;
@@ -118,8 +113,9 @@ span {
     right: 10%;
   }
 }
+
 @media screen and (min-width:0px) and (max-width: 360px) {
-#fourthPage #logo {
-    display:none;
+  #fourthPage #logo {
+    display: none;
   }
 }
