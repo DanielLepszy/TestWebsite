@@ -28,7 +28,8 @@
   width: 25px;
 
 }  
-.buttonNext::after {
+
+#nextButtonsForTwoSides div::after {
   content: '';
   position: absolute;
   border: solid #EFC900;
@@ -39,6 +40,7 @@
   margin-left: 7px;
   margin-top: 7px;
 }
+
 #leftSideButtonNext{
 transform: rotate(135deg);
 left:5%;
@@ -53,6 +55,10 @@ left:5%;
   transition: all .3s ease-in-out;
 }
 
+#leftSideButtonNext:hover {
+  transform: scale(1.5, 1.5) rotate(135deg);
+  transition: all .3s ease-in-out;
+}
 #contactPage {
   margin: 0px;
   background-color: #EFC900;

@@ -20,14 +20,14 @@
   color: white;
 }
 
-.SecondAbout {
+.secondAbout {
   margin-right: 40px;
   font-size: 17px;
   font-family: Ubuntu;
   font-weight: bolder;
 }
 
-.SecondAbout:hover {
+.secondAbout:hover {
   color: black;
 }
 
@@ -154,11 +154,11 @@
     right: 50%;
     transform: translate(50%, 50%);
   }
-  .SecondAbout {
+  .secondAbout {
     margin-right: 20px;
     font-size: 10px;
   }
-  .SecondAbout:hover {
+  .secondAbout:hover {
     color: black;
   }
   #buissnessDescription {

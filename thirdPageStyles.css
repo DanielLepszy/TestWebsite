@@ -10,17 +10,20 @@
     z-index: 2;
 }
 
-#thirdDescription {
+#thirdDescription .secondAbout {
     color: #EFC900;
 }
-
+.secondAbout:hover
+{
+    cursor:hand;
+}
 #thirdLogo {
     position: relative;
     top: 45px;
     left: 55px;
 }
 
-#FourStepsHowIsItWork {
+#fourStepsHowIsItWork {
     position: absolute;
     left: 50%;
     top: 15%;
@@ -95,7 +98,7 @@
         transform: translate(-50%, -50%);
         margin: 25px;
     }
-    #FourStepsHowIsItWork {
+    #fourStepsHowIsItWork {
         top: 32%;
     }
     .positionHowIsItWork {
